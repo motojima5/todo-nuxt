@@ -31,7 +31,7 @@ const onLoginButtonClick = async (): Promise<void> => {
       loginUserCookie.value = asyncData.data.value.user;
       const loginTokenCookie = useCookie<string | null>("loginToken");
       loginTokenCookie.value = asyncData.data.value.token;
-      await navigateTo("/");
+      await navigateTo("/todo");
     } else {
       pending.value = false;
       authFailed.value = true;
