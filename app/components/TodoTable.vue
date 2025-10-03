@@ -17,7 +17,9 @@ const todoList = useState<Map<number, Todo>>("todoList");
     <tbody>
       <tr v-for="[id, todo] in todoList" v-bind:key="id">
         <th>
-          {{ todo.id }}
+          <NuxtLink v-bind:to="{ name: 'todo-id', params: { id: id } }">
+            {{ todo.id }}
+          </NuxtLink>
         </th>
         <th>
           {{ todo.task }}
@@ -36,8 +38,5 @@ const todoList = useState<Map<number, Todo>>("todoList");
 <style scoped>
 table {
   width: 100%;
-}
-th {
-  /* border-bottom: 1px solid #000; */
 }
 </style>
