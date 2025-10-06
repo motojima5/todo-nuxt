@@ -1,3 +1,12 @@
+<script setup lang="ts">
+import type { Todo } from "~~/interfaces";
+
+useState<Map<number, Todo>>("todoList", (): Map<number, Todo> => {
+  const todoListInit = new Map<number, Todo>();
+  return todoListInit;
+});
+</script>
+
 <template>
   <NuxtLayout>
     <NuxtPage />

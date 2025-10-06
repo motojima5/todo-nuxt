@@ -10,3 +10,15 @@ export interface ReturnJSONAuth {
   token: string;
   user: User | null;
 }
+
+export interface Todo {
+  id: number;
+  task: string;
+  person: string;
+  deadline: string;
+}
+
+export interface ReturnJSONTodos {
+  result: number;
+  data: Todo[];
+}
