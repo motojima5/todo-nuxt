@@ -17,3 +17,8 @@ export interface Todo {
   person: string;
   deadline: string;
 }
+
+export interface ReturnJSONTodos {
+  result: number;
+  data: Todo[];
+}

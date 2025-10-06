@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import TodoTable from "~/components/TodoTable.vue";
 
 definePageMeta({
   middleware: ["loggedin-check"],
