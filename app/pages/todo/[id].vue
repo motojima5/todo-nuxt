@@ -3,6 +3,7 @@ import type { Todo } from "~~/interfaces";
 
 definePageMeta({
   layout: "detail",
+  middleware: ["loggedin-check"],
 });
 
 const route = useRoute();
