@@ -1,6 +1,5 @@
 [build]
   command = "NITRO_PRESET=netlify npx nuxi build"
-  publish = ".output/public"
   functions = ".netlify/functions"
 
 [[redirects]]
