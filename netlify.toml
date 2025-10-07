@@ -1,5 +1,5 @@
 [build]
-  command = "NITRO_PRESET=netlify npx nuxi build"
+  command = "NITRO_PRESET=netlify npx nuxt build"
   publish = "dist"
 
 [[redirects]]
