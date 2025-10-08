@@ -1,8 +1,0 @@
-[build]
-  command = "NITRO_PRESET=netlify npx nuxt build"
-  publish = "dist"
-
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/server"
-  status = 200
